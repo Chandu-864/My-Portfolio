@@ -1,0 +1,216 @@
+
+.projects-heading h1 {
+    margin: 20px auto;
+    font-size: 40px;
+    border-bottom: 2px solid #ff6a00;
+    width: fit-content;
+    text-align: center; /* Center the heading */
+}
+
+.projects-item {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-image: url('Chandu Portfolio Images/Dark\ clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    margin-right: 200px;
+}
+
+.image-container {
+    position: relative;
+    width: fit-content;
+    max-width: 1000px; /* Set a max width for the image */
+    height: 400px; /* Fixed height for the image */
+    overflow: hidden; /* Ensure overlay fits the image */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0px auto;
+}
+
+.image-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    transition: transform 0.3s ease; /* add a zoom effect */
+}
+
+.image-container:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.image-container .text {
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0; /* Start hidden */
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay background */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Hide content when not hovered */
+    transition: height 0.5s ease;
+}
+
+.image-container:hover .text {
+    height: 400px; /* Expand to full height on hover */
+}
+
+.image-container .effect {
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.projects-item p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px; /* Space between image and text */
+    color:#fff;
+}
+
+@keyframes bulge {
+    from {
+        width: 0;
+    }
+    to {
+        width: 1;
+    }
+}
+
+.projects-item.itemanimation {
+    animation: bulge 1.5s ease forwards;
+}
+
+.projects-item.itemanimation {
+    background-image: url('Chandu Portfolio Images/Dark\ clouds.jpg');
+}
+
+.projects-item.itemanimation .image-container:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.projects-item {
+    opacity: 0;
+}
+
+.scrollAnimation {
+    animation: 1s slide-up ease forwards;
+    opacity: 1;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*-------------------------------aligning image and paragraph----------------------------*/
+
+.project-para {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.para {
+    margin-left: 200px;
+    width: 25%;
+    opacity:0;
+    height: 400px;
+    text-align: justify;
+}
+
+.para p {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+
+.scrollAnimation-left {
+    animation: 1s slide-left ease forwards;
+    opacity: 1;
+}
+
+@keyframes slide-left {
+    0% {
+        opacity: 0;
+        transform: translatex(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*----------------------------------------go-top---------------------------------------*/
+
+.go-top {
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.go-top button {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    background: #ff6a00;;
+    width: 240px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration: none;
+    font-weight: 600;
+    outline: 0;
+    border: 0;
+    transition: background 0.3s ease;
+}
+
+.go-top button:hover {
+    background: #d36618;
+    color: var(--teritary-color);
+}
+
+
+
+
+/*-------------------------------------making page responsive----------------------------*/
+
+@media (max-width: 768px) {
+    body {
+        padding: 0px;
+        margin: 0px;
+    }
+    .project-para{
+        width: 100vw;
+        height: auto;
+    }
+    .para {
+        display:none;
+    }
+    .project-para .projects-item {
+        width: 80%;
+        margin: 20px auto;
+    }
+    .projects-heading h1 {
+        font-size: 30px;
+        margin: 15px auto;
+    }
+}

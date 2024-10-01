@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Chandu Portfolio Images/Chandu Image.JPG" type="JPG">
+    <title>Chandu Thalati | CONTACT </title>
+    <link rel = "stylesheet" href = "Chandu Portfolio.css">
+    <link rel="stylesheet" href="Chandu About.html">
+    <link rel="stylesheet" href="Projects Page.css">
+    <link rel="stylesheet" href="Contact Page.css">
+    <script src="https://kit.fontawesome.com/0222b3c263.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div id ="header">
+        <div class="container">
+            <div class="header-set">
+                <img src="Chandu Image.JPG">
+                <p>CHANDU THALATI</p>
+            </div>
+            <div class = "home-options">
+                <a class = "menu-icon" onclick="openMenu()"><i class="fa-solid fa-bars"></i></a>
+                <ul id = "sidemenu">
+                    <li><a href = "index.html">HOME</a></li>
+                    <li><a href = "Chandu About.html">ABOUT</a></li>
+                    <li><a href = "Chandu Project Page.html">PROJECTS</a></li>
+                    <li id = "mode"><i class="fa-solid fa-moon"></i></li>
+                    <li id = "close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></li>
+                </ul>
+            </div>
+        </div>
+    <div id="background">
+        <div class="contact-section">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="contactheading">CONTACT ME</h1>
+                    <a href="mailto:chanduthalati@gmail.com"><p><i class="fa-solid fa-envelope"></i>chanduthalati@gmail.com</p></a>
+                    <a href="tel:8454849802"><p><i class="fa-solid fa-phone-volume"></i>845-484-9802</p></a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/mwpegwvb" method="post">
+                        <input type="text" name = "name" placeholder="Enter your name" required>
+                        <input type="email" name = "email" placeholder = "Enter your email address" required>
+                        <textarea name="message" rows = "6" placeholder = "your message"></textarea>
+                        <button type="submit" class = "contact-submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-social-icons">
+                <div class = "media">
+                    <a href="https://github.com/Chandu-864/My-Web-Projects" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chandu-thalati-268839267/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/chandu_thalati/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src = "Chandu Portfolio.js"></script>
+</body>
+</html>
