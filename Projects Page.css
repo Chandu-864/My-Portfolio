@@ -31,6 +31,13 @@
     margin-bottom: 100px;
     margin-right: 200px;
 }
+.projects-item.itemanimation {
+    animation: bulge 1.5s ease forwards;
+}
+
+.projects-item.itemanimation .image-container:hover img {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
 
 .image-container {
@@ -99,17 +106,6 @@
     }
 }
 
-.projects-item.itemanimation {
-    animation: bulge 1.5s ease forwards;
-}
-
-.projects-item.itemanimation {
-    background-image: url('Chandu Portfolio Images/Dark\ clouds.jpg');
-}
-
-.projects-item.itemanimation .image-container:hover img {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-}
 
 .projects-item {
     opacity: 0;
