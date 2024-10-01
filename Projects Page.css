@@ -19,6 +19,19 @@
     margin-bottom: 100px;
     margin-right: 200px;
 }
+.projects-item .itemanimation{
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 35px;
+    background-image: url('Dark clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    margin-right: 200px;
+}
+
 
 .image-container {
     position: relative;
