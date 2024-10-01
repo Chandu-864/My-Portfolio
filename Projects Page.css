@@ -19,7 +19,7 @@
     margin-bottom: 100px;
     margin-right: 200px;
 }
-.projects-item .itemanimation{
+.projects-item.itemanimation{
     width: 40%;
     height: auto;
     display: flex;
