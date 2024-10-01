@@ -19,23 +19,16 @@
     margin-bottom: 100px;
     margin-right: 200px;
 }
-.projects-item.itemanimation{
-    width: 40%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 35px;
-    background-image: url('./Dark clouds.jpg');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 100px;
-    margin-right: 200px;
-}
-.projects-item.itemanimation {
+
+.projects-item:nth-child(1) {
     animation: bulge 1.5s ease forwards;
 }
 
-.projects-item.itemanimation .image-container:hover img {
+.projects-item:nth-child(1) {
+    background-image: url('Dark clouds.jpg');
+}
+
+.projects-item:nth-child(1) .image-container:hover img {
     transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
